@@ -63,46 +63,46 @@ View the RTL diagram.
 ### Program:
 Program to design a half adder and full adder circuit and verify its truth table in quartus using verilog programming
 
-HALF-ADDER:
-
+# HALF-ADDER:
+```
 module exp3(sum, carry,a,b); 
 input a,b; 
 output sum,carry; 
 xor sum1(sum,a,b); 
 and carry1(carry,a,b); 
 endmodule
-
-FULL-ADDER:
-
+```
+# FULL-ADDER:
+```
 module fulladder(a,b,c,sum,carry);
 input a,b,c;
 output sum,carry;
 xor(sum,a,b,c);
 assign carry=a&b | b&c | a&c;
 endmodule
+```
+#### TRUTH TABLE:
 
-TRUTH TABLE:
-
-HALF-ADDER:
+# HALF-ADDER:
 ![image](https://github.com/ramanpiritha/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/147084116/b31b04a0-5ee9-4eda-8a26-6f457bc493ae)
 
-FULL-ADDER:
+# FULL-ADDER:
 ![image](https://github.com/ramanpiritha/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/147084116/bcbd9c96-de7b-4d15-bbd5-a575be23fd15)
 
 
 ### RTL REALIZATION:
-HALF-ADDER:
+# HALF-ADDER:
 ![image](https://github.com/ramanpiritha/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/147084116/4a9ce3fe-f742-4458-939c-eb15800d946c)
 
-FULL-ADDER:
+# FULL-ADDER:
 ![image](https://github.com/ramanpiritha/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/147084116/9404c48a-666d-49f8-8ffe-29ab6a9b9043)
 
 
 ## OUTPUT:
-HALF-ADDER:
+# HALF-ADDER:
 ![image](https://github.com/ramanpiritha/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/147084116/4e037751-908a-42d1-88f5-26f6aef775ef)
 
-FULL-ADDER:
+# FULL-ADDER:
 ![image](https://github.com/ramanpiritha/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/147084116/8c2fc4d1-913b-4e61-93ae-2b59fb1a432e)
 
 
